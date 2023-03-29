@@ -1,0 +1,46 @@
+---
+title: "Readme"
+author: "Dana Aspel"
+date: "2023-03-28"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Package Description
+
+This is a package I have set up in github to learn and understand building packages, documentation, github versions, and testing with the Coursera Building
+R Packages course. 
+
+## Important
+
+Some reminders for the package:
+
+<li>library(devtools) - Run this within the package folder</li>
+<li>document() - This will document all the functions in the man directory</li>
+<li>setwd("..") - Go one directory step up</li>
+<li>install("fars", build_vignettes = TRUE) - Enter your package name here. #Including the build_vignettes = TRUE will make the vignettes available</li>
+<li>check("fars") - Shortcut to do a R CMD check </li>
+<li>shell("rm -f fars.pdf") - Create a pdf documentation of all the functions</li>
+<li>setwd("./fars") - Reset to the top of the directory tress </li>
+
+
+## Useful functions for this package
+
+
+#### To create vignettes
+use_vignette() 
+
+#### To create a test directory
+use_testthat()
+
+#### To create a RDA dataset and store in the data folder - requires a data.R file"
+use_data()
+
+### To make the package AppVeyor ready - Windows
+use_appveyor()
+
+
+
