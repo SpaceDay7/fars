@@ -39,6 +39,9 @@ use_testthat()
 #### To create a RDA dataset and store in the data folder - requires a data.R file"
 use_data()
 
+#### To make the package Travis read - LINUX
+use_travis()
+
 ### To make the package AppVeyor ready - Windows
 use_appveyor()
 
